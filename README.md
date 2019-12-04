@@ -15,5 +15,18 @@ python near.py -graph ../data/PPI.edgelist -embedding ../data/PPI.embedding -out
 ```
 -graph         graph data in edgelist format
 -embedding     network embedding learned by skip-gram model
+-da            select to delete or add edge, default(0: random select edge), 1:add, -1:delete
+-edge          edge id
 -output        embedding output by Near
+```
+###Citing
+```
+@inproceedings{wang2019discerning,
+  title={Discerning Edge Influence for Network Embedding},
+  author={Wang, Yaojing and Yao, Yuan and Tong, Hanghang and Xu, Feng and Lu, Jian},
+  booktitle={Proceedings of the 28th ACM International Conference on Information and Knowledge Management},
+  pages={429--438},
+  year={2019},
+  organization={ACM}
+}
 ```

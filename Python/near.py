@@ -108,11 +108,13 @@ def main(args):
 
     links, weights = loadGraph(args.graph)
     emb = loadEmbedding(args.embedding)
-
+    
     da_id = int(random.random()*node_size)
     daflag = args.da
+    if daflag != 0:
+        da_id = args.edge
 
-    Near(args, emb, links, weights, links[da_id], weights[da_id], -1)
+    Near(args, emb, links, weights, links[da_id], weights[da_id], daflag)
     print(links[da_id])
 
 
@@ -121,7 +123,8 @@ if __name__ == '__main__':
 
     parser.add_argument('-graph', nargs='?', required=False, help='')
     parser.add_argument('-embedding', nargs='?', required=False, help='')
-    parser.add_argument('-da', nargs='?', default=-1, required=False, help='')
+    parser.add_argument('-da', nargs='?', default=0, required=False, help='')
+    parser.add_argument('-edge', nargs='?', required=False, help='')
     parser.add_argument('-output', nargs='?', required=False, help='')
     
 

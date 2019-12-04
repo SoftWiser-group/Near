@@ -19,7 +19,7 @@ python near.py -graph ../data/PPI.edgelist -embedding ../data/PPI.embedding -out
 -edge          edge id in edgelist (start from 0)
 -output        embedding output by Near
 ```
-###Citing
+### Citing
 ```
 @inproceedings{wang2019discerning,
   title={Discerning Edge Influence for Network Embedding},

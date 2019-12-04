@@ -15,8 +15,8 @@ python near.py -graph ../data/PPI.edgelist -embedding ../data/PPI.embedding -out
 ```
 -graph         graph data in edgelist format
 -embedding     network embedding learned by skip-gram model
--da            select to delete or add edge, default(0: random select edge), 1:add, -1:delete
--edge          edge id
+-da            select to delete or add edge, 0: random select edge(default), 1:add, -1:delete
+-edge          edge id in edgelist (start from 0)
 -output        embedding output by Near
 ```
 ###Citing

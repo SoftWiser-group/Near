@@ -9,7 +9,7 @@ Code for CIKM paper Discerning Edge Influence for Network Embedding
 ### Usage
 
 ```
-python near.py -graph ../data/PPI.edgelist -embedding ../data/PPI.embedding -output PPI_near.embedding
+python near.py -graph ../data/PPI.edgelist -embedding ../data/PPI.embedding -output PPI_near.embedding -da -1 -edge 123
 ```
 
 ```

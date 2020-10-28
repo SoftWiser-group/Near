@@ -110,9 +110,9 @@ def main(args):
     emb = loadEmbedding(args.embedding)
     
     da_id = int(random.random()*node_size)
-    daflag = args.da
+    daflag = int(args.da)
     if daflag != 0:
-        da_id = args.edge
+        da_id = int(args.edge)
 
     Near(args, emb, links, weights, links[da_id], weights[da_id], daflag)
     print(links[da_id])
